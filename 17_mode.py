@@ -11,3 +11,10 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    highestOccurences = 0
+
+    for num in nums:
+        if nums.count(num) > highestOccurences:
+            highestOccurences = num
+
+    return highestOccurences

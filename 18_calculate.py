@@ -26,3 +26,20 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         >>> calculate('foo', 2, 3) is None
         True
     """
+    # if make_int arg is provided apply to both a and b
+    # based off operation
+    # use that operation on a and b
+    # return that value using message given
+
+    if make_int:
+        a = round(a)  # why didn't int() work?
+        b = round(b)
+
+    if operation == "add":
+        return f"{message} {a + b}"
+    elif operation == "subtract":
+        return f"{message} {a - b}"
+    elif operation == "divide":
+        return f"{message} {a / b}"
+    elif operation == "multiply":
+        return f"{message} {a * b}"
