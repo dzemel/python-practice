@@ -11,3 +11,10 @@ def remove_every_other(lst):
         >>> lst
         [1, 2, 3, 4, 5]
     """
+    every_other = []
+
+    for num in range(len(lst)):
+        if num % 2 == 0:
+            every_other.append(lst[num])
+
+    return every_other

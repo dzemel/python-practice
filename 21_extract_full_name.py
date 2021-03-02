@@ -22,8 +22,10 @@ def extract_full_names(people):
 
     for dic in people:
         full_name = ""
+
         full_name += dic.get("first")
         full_name += " "
+
         full_name += dic.get("last")
         full_names.append(full_name)
 
